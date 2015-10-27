@@ -11010,9 +11010,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-MBRA140" value="1N5817"/>
 <part name="U2" library="SparkFun-PowerIC" deviceset="V_REG_LDO" device="SMD" value="SPX3819M5-L33"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="470pF"/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10uF"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-MBRA140" value="1N5817"/>
 <part name="IC1" library="74xx-little-us" deviceset="74*1G08" device="DBV" technology="LVC"/>
@@ -11098,12 +11095,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <attribute name="VALUE" x="35.56" y="97.79" size="1.778" layer="96"/>
 </instance>
 <instance part="GND1" gate="1" x="27.94" y="109.22" rot="R270"/>
-<instance part="R1" gate="G$1" x="-104.14" y="104.14" smashed="yes">
-<attribute name="NAME" x="-102.87" y="102.3366" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-102.362" y="107.696" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="C5" gate="G$1" x="-96.52" y="99.06"/>
-<instance part="GND9" gate="1" x="-96.52" y="88.9"/>
 <instance part="C4" gate="G$1" x="-50.8" y="104.14"/>
 <instance part="D1" gate="G$1" x="-58.42" y="114.3" smashed="yes">
 <attribute name="NAME" x="-58.42" y="119.8626" size="1.778" layer="95"/>
@@ -11208,11 +11199,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="30.48" y1="109.22" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="-96.52" y1="93.98" x2="-96.52" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
@@ -11483,15 +11469,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="91.44" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
 <label x="99.06" y="58.42" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="-99.06" y1="104.14" x2="-96.52" y2="104.14" width="0.1524" layer="91"/>
-<label x="-93.98" y="104.14" size="1.778" layer="95"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="-96.52" y1="104.14" x2="-93.98" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="101.6" x2="-96.52" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-96.52" y="104.14"/>
-</segment>
 </net>
 <net name="VRIN" class="1">
 <segment>
@@ -11550,10 +11527,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="-109.22" y1="119.38" x2="-114.3" y2="119.38" width="0.1524" layer="91"/>
 <junction x="-114.3" y="127"/>
 <junction x="-114.3" y="119.38"/>
-<junction x="-114.3" y="111.76"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-109.22" y1="104.14" x2="-114.3" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="104.14" x2="-114.3" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VCCIO"/>
