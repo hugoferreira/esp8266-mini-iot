@@ -11056,9 +11056,9 @@ www.irf.com&lt;p&gt;
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="vcc" width="0.508" drill="0">
+<class number="1" name="vcc" width="0.4064" drill="0">
 </class>
-<class number="2" name="vreg" width="0.508" drill="0">
+<class number="2" name="vreg" width="0.4064" drill="0">
 </class>
 </classes>
 <parts>
