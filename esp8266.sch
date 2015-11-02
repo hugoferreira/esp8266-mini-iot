@@ -11094,11 +11094,11 @@ www.irf.com&lt;p&gt;
 <part name="U1" library="SparkFun-DigitalIC" deviceset="FT232RL-BASIC" device="SSOP"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-MBRA140" value="1N5817"/>
-<part name="U2" library="SparkFun-PowerIC" deviceset="V_REG_LDO" device="SMD" value="SPX3819M5-L33"/>
+<part name="SPX" library="SparkFun-PowerIC" deviceset="V_REG_LDO" device="SMD" value="SPX3819M5-L33"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10uF"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-MBRA140" value="1N5817"/>
-<part name="IC1" library="74xx-little-us" deviceset="74*1G08" device="DBV" technology="LVC"/>
+<part name="AND" library="74xx-little-us" deviceset="74*1G08" device="DBV" technology="LVC"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R10" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M08" device="LOCK"/>
@@ -11177,7 +11177,7 @@ www.irf.com&lt;p&gt;
 <attribute name="NAME" x="15.7226" y="124.46" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="12.9286" y="124.46" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U2" gate="G$1" x="43.18" y="109.22" smashed="yes">
+<instance part="SPX" gate="G$1" x="43.18" y="109.22" smashed="yes">
 <attribute name="NAME" x="35.56" y="118.364" size="1.778" layer="95"/>
 <attribute name="VALUE" x="35.56" y="97.79" size="1.778" layer="96"/>
 </instance>
@@ -11187,7 +11187,7 @@ www.irf.com&lt;p&gt;
 <attribute name="NAME" x="-58.42" y="119.8626" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-58.42" y="117.0686" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="A" x="-43.18" y="53.34"/>
+<instance part="AND" gate="A" x="-43.18" y="53.34"/>
 <instance part="R3" gate="G$1" x="-60.96" y="68.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="-59.1566" y="64.77" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-59.436" y="70.358" size="1.778" layer="96" rot="R270"/>
@@ -11197,7 +11197,7 @@ www.irf.com&lt;p&gt;
 <attribute name="VALUE" x="-69.596" y="70.358" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="JP1" gate="G$1" x="109.22" y="30.48"/>
-<instance part="IC1" gate="P" x="-53.34" y="76.2" rot="R90"/>
+<instance part="AND" gate="P" x="-53.34" y="76.2" rot="R90"/>
 <instance part="GND7" gate="1" x="-43.18" y="76.2" rot="R90"/>
 <instance part="PFET2" gate="G$1" x="-30.48" y="137.16" rot="R270"/>
 <instance part="GND4" gate="1" x="-27.94" y="144.78" rot="R180"/>
@@ -11281,7 +11281,7 @@ www.irf.com&lt;p&gt;
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="SPX" gate="G$1" pin="GND"/>
 <wire x1="30.48" y1="109.22" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -11290,7 +11290,7 @@ www.irf.com&lt;p&gt;
 <label x="121.92" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="P" pin="GND"/>
+<pinref part="AND" gate="P" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -11551,7 +11551,7 @@ www.irf.com&lt;p&gt;
 <net name="RTS" class="0">
 <segment>
 <pinref part="ESP8266-07/12" gate="G$1" pin="RESET"/>
-<pinref part="IC1" gate="A" pin="O"/>
+<pinref part="AND" gate="A" pin="O"/>
 <wire x1="-30.48" y1="53.34" x2="-25.4" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="53.34" x2="-25.4" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="71.12" x2="-25.4" y2="71.12" width="0.1524" layer="91"/>
@@ -11570,12 +11570,12 @@ www.irf.com&lt;p&gt;
 <wire x1="10.16" y1="116.84" x2="10.16" y2="114.3" width="0.1524" layer="91"/>
 <junction x="10.16" y="114.3"/>
 <pinref part="D2" gate="G$1" pin="C"/>
-<pinref part="U2" gate="G$1" pin="IN"/>
+<pinref part="SPX" gate="G$1" pin="IN"/>
 <wire x1="10.16" y1="114.3" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="114.3" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="104.14" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
 <junction x="20.32" y="114.3"/>
-<pinref part="U2" gate="G$1" pin="EN"/>
+<pinref part="SPX" gate="G$1" pin="EN"/>
 <wire x1="33.02" y1="104.14" x2="20.32" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -11589,7 +11589,7 @@ www.irf.com&lt;p&gt;
 <wire x1="73.66" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="109.22" x2="73.66" y2="114.3" width="0.1524" layer="91"/>
 <junction x="73.66" y="114.3"/>
-<pinref part="U2" gate="G$1" pin="OUT"/>
+<pinref part="SPX" gate="G$1" pin="OUT"/>
 <junction x="60.96" y="114.3"/>
 <wire x1="50.8" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
 </segment>
@@ -11639,7 +11639,7 @@ www.irf.com&lt;p&gt;
 <wire x1="-60.96" y1="73.66" x2="-60.96" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-60.96" y="76.2"/>
 <label x="-60.96" y="78.74" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="IC1" gate="P" pin="VCC"/>
+<pinref part="AND" gate="P" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="3"/>
@@ -11738,7 +11738,7 @@ www.irf.com&lt;p&gt;
 <net name="FTDI_RTS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="RTS"/>
-<pinref part="IC1" gate="A" pin="I0"/>
+<pinref part="AND" gate="A" pin="I0"/>
 <wire x1="-83.82" y1="55.88" x2="-66.04" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="55.88" x2="-55.88" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="55.88" x2="-66.04" y2="63.5" width="0.1524" layer="91"/>
@@ -11750,7 +11750,7 @@ www.irf.com&lt;p&gt;
 <segment>
 <pinref part="RST-P16" gate="1" pin="1"/>
 <wire x1="-60.96" y1="45.72" x2="-60.96" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="A" pin="I1"/>
+<pinref part="AND" gate="A" pin="I1"/>
 <wire x1="-60.96" y1="50.8" x2="-55.88" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="50.8" x2="-60.96" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-60.96" y="50.8"/>
@@ -11776,7 +11776,6 @@ www.irf.com&lt;p&gt;
 <approved hash="104,1,-114.3,53.34,U1,VCCIO,3V3,,,"/>
 <approved hash="104,1,-114.3,45.72,U1,AGND,GND,,,"/>
 <approved hash="104,1,-114.3,58.42,U1,VCC,VIN,,,"/>
-<approved hash="202,1,50.8,104.14,U2,BP,,,,"/>
 </errors>
 </schematic>
 </drawing>
